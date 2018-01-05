@@ -1,0 +1,18 @@
+package com.football.java;
+
+import org.mule.api.MuleContext;
+import org.mule.api.MuleEvent;
+import org.mule.api.MuleMessage;
+
+import com.football.model.Match;
+
+public interface MethodsInterface {
+	
+	public void getAllMatches();
+	
+	public void getMatches(String team);
+	
+	public void addMatch(Match match);
+	
+	public static MuleEvent invokeMuleFlow(MuleMessage muleMessage, MuleContext muleContext, String flowName);
+}

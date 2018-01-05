@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;orchard-ws.xml&apos; to &apos;orchard-apikit-ws/src/main/app&apos;&#x0D;&#x0A;- Original project: &apos;orchard-ws&apos;&#x0D;&#x0A;- Destination element: &apos;orchard-apikit-ws/src/main/app&apos;&#x0D;&#x0A;- Original element: &apos;orchard-ws.xml&apos;" description="Copy file" destination="=orchard-apikit-ws/src\/main\/app" element1="src/main/app/orchard-ws.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1514265578191" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package com.football.java;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+@WebService
+public interface MethodsInterface {
+	
+	@WebMethod
+	public String getAllMatches();
+	
+	@WebMethod
+	public String getMatches(String team);
+	
+	//public boolean addMatch(Match match);
+	
+}

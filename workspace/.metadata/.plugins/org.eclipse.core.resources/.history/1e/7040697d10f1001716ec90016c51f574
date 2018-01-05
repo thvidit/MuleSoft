@@ -1,0 +1,57 @@
+package com.football.java;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
+import com.football.database.Database;
+
+@WebService(endpointInterface="com.football.java.MethodsInterface", serviceName="getAllMatches")
+public class MethodsImplementation implements MethodsInterface{
+
+	Database db = new Database();
+	
+	@Override
+	@WebMethod
+	public ResultSet getAllMatches() {
+		try {
+			Connection conn =  db.getConnection();
+			Statement stmt = conn.createStatement();
+			String query = "SELECT * FROM MATCHES";
+			ResultSet rs = stmt.executeQuery(query);
+			while(rs.next()){
+				System.out.println("Resultset is: " + rs.getInt(1));
+			}
+			return rs;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+
+	@Override
+	@WebMethod
+	public ResultSet getMatches(String team) {
+		try {
+			Connection conn =  db.getConnection();
+			Statement stmt = conn.createStatement();
+			String query = "SELECT * FROM MATCHES where team_id= '" + team +"'";
+			ResultSet rs = stmt.executeQuery(query);
+			return rs;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+
+	/*@Override
+	public boolean addMatch(Match match) {
+		
+		
+	}*/
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;football-soap-ws-consume/src/main/app/football-soap-consume-ws.xml&apos; to &apos;football-soap-ws-consume.xml&apos;" description="Rename resource &apos;football-soap-consume-ws.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/football-soap-consume-ws.xml" name="football-soap-ws-consume.xml" stamp="1514820132715" updateReferences="true"/>
+</session>

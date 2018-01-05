@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ws="http://www.mulesoft.org/schema/mule/ws" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-current.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/current/mule-ws.xsd">
+    <context:property-placeholder location="mule.properties"/>
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration" />
+    <http:request-config name="United-http-request-config" host="${united.host}" port="80" doc:name="HTTP Request Configuration">
+        <http:proxy host="172.17.2.218" port="8085" username="M1043142" password="Shonit&amp;singh93"/>
+    </http:request-config>
+    <http:request-config name="american-http-request-config" protocol="HTTPS" host="mocksvc.mulesoft.com" port="443" basePath="/mocks/7ac279a3-353a-4c43-a8ed-cf3fb6fbaf1e" doc:name="HTTP Request Configuration">
+        <http:raml-api-configuration location="https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/810adac1-e2af-40b4-b0f3-716b695c4f93/public/apis/10347626/versions/130725/files/root"/>
+        <http:proxy host="172.17.2.218" port="8085" username="M1043142" password="Shonit&amp;singh93"/>
+    </http:request-config>
+    <ws:consumer-config name="delta-web-service-consumer" wsdlLocation="http://mu.mulesoft-training.com/essentials/delta?wsdl" service="TicketServiceService" port="TicketServicePort" serviceAddress="http://training-u.cloudhub.io/essentials/delta" connectorConfig="United-http-request-config" doc:name="Web Service Consumer"/>
+    <flow name="muelsoft-week5Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/deltaflights" doc:name="HTTP"/>
+        <set-variable variableName="airline" value="#[message.inboundProperties.'http.query.params'.airline]" doc:name="Set airline name"/>
+        <flow-ref name="setDestinationSubflow" doc:name="setDestinationSubflow"/>
+        <choice doc:name="Choice">
+            <when expression="#[flowVars.airline == &quot;deltaflights&quot;]">
+                <flow-ref name="getDeltaFindFlights" doc:name="getDeltaFindFlights"/>
+            </when>
+            <when expression="#[flowVars.airline == &quot;united&quot;]">
+                <flow-ref name="getUnitedFlightsFlow" doc:name="getUnitedFlightsFlow"/>
+            </when>
+            <when expression="#[flowVars.airline == &quot;american&quot;]">
+                <flow-ref name="getAmericanFlightsFlow" doc:name="getAmericanFlightsFlow"/>
+            </when>
+            <when expression="#[flowVars.airline == &quot;delta&quot;]">
+                <flow-ref name="getDeltaFlightsFlow" doc:name="getDeltaFlightsFlow"/>
+            </when>
+            <otherwise>
+                <logger level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+        <logger level="INFO" doc:name="Logger"/>
+        <exception-strategy ref="ChoiceExceptionStrategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="getUnitedFlightsFlow">
+        <http:request config-ref="United-http-request-config" path="/essentials/united/flights/{destination}" method="GET" doc:name="United Rest Request">
+            <http:request-builder>
+                <http:uri-param paramName="destination" value="#[flowVars.code]"/>
+            </http:request-builder>
+        </http:request>
+        <dw:transform-message doc:name="Transform Message" metadata:id="c5d017f0-3a54-471a-bd9f-816d0575366c">
+            <dw:input-payload mimeType="application/json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+payload.flights map ((flight , indexOfFlight) -> {
+	airline: flight.airlineName,
+	flightCode: flight.code,
+	fromAirportCode: flight.origin ++ flight.origin,
+	toAirportCode: flight.destination,
+	departureDate: flight.departureDate,
+	emptySeats: flight.emptySeats,
+	price: flight.price,
+	planeType: flight.planeType
+})]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+        <exception-strategy ref="exceptionStrategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="getAmericanFlightsFlow">
+        <http:request config-ref="american-http-request-config" path="/flights" method="GET" doc:name="American Rest Request">
+            <http:request-builder>
+                <http:query-param paramName="code" value="#[flowVars.code]"/>
+            </http:request-builder>
+        </http:request>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="getDeltaFlightsFlow">
+        <ws:consumer config-ref="delta-web-service-consumer" operation="listAllFlights" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="d2731cb9-1149-4631-b30a-4a76220e1eaa">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://soap.training.mulesoft.com/
+---
+payload.ns0#listAllFlightsResponse.*return map ((return , indexOfReturn) -> {
+	airline: return.airlineName,
+	flightCode: return.code,
+	fromAirportCode: return.origin,
+	toAirportCode: return.destination,
+	departureDate: return.departureDate,
+	emptySeats: return.emptySeats,
+	price: return.price,
+	planeType: return.planeType
+})]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+        <exception-strategy ref="exceptionStrategy" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="getDeltaFindFlights">
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://soap.training.mulesoft.com/
+---
+{
+	ns0#findFlight: {
+		destination: flowVars.code as :string
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <ws:consumer config-ref="delta-web-service-consumer" operation="findFlight" doc:name="Web Service Consumer"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="d2731cb9-1149-4631-b30a-4a76220e1eaa">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+%namespace ns0 http://soap.training.mulesoft.com/
+---
+payload.ns0#findFlightResponse.*return map ((return , indexOfReturn) -> {
+	airline: return.airlineName,
+	flightCode: return.code,
+	fromAirportCode: return.origin,
+	toAirportCode: return.destination,
+	departureDate: return.departureDate,
+	emptySeats: return.emptySeats,
+	price: return.price,
+	planeType: return.planeType
+})]]></dw:set-payload>
+        </dw:transform-message>
+        <logger level="INFO" doc:name="Logger"/>
+    </flow>
+    <sub-flow name="setDestinationSubflow">
+        <set-variable variableName="code" value="#[message.inboundProperties.'http.query.params'.code == empty ? 'SFO' : message.inboundProperties.'http.query.params'.code]" doc:name="Set Destination"/>
+    </sub-flow>
+    <catch-exception-strategy name="exceptionStrategy">
+        <exception-type-filter expectedType="com.mulesoft.weave.mule.exception.WeaveExecutionException" doc:name="Exception"/>
+        <set-payload value="{&quot;message&quot;: &quot;No station exists for entered code.&quot;}" doc:name="Set Payload"/>
+    </catch-exception-strategy>
+    <choice-exception-strategy name="ChoiceExceptionStrategy">
+        <catch-exception-strategy when="#[exception.causedBy(com.mulesoft.weave.mule.exception.WeaveExecutionException)]" doc:name="Catch Exception Strategy">
+            <set-payload value="{&quot;message&quot;: &quot;No flight to: #[flowVars.code ]&quot;, &quot;exception&quot;:  &quot;#[exception]&quot;}" mimeType="application/json" doc:name="Set Payload"/>
+            <set-property propertyName="http.status" value="400" doc:name="Property"/>
+            <logger level="INFO" doc:name="Logger"/>
+        </catch-exception-strategy>
+        <catch-exception-strategy when="#[exception.causeMatches(com.mulesoft.weave)]" doc:name="Catch Exception Strategy">
+            <set-payload value="{&quot;message&quot;: &quot;Some Exception Occurred&quot;, &quot;exception&quot;:  &quot;#[exception]&quot;}" doc:name="Set Payload"/>
+            <set-property propertyName="http.status" value="500" doc:name="Property"/>
+            <logger level="INFO" doc:name="Logger"/>
+        </catch-exception-strategy>
+    </choice-exception-strategy>
+</mule>

@@ -1,0 +1,5 @@
+#Tue Dec 26 22:10:01 IST 2017
+encoding=UTF-8
+domain=default
+redeployment.enabled=true
+config.resources=orchard-implementation.xml,orchard-interface.xml

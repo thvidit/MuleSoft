@@ -1,0 +1,10 @@
+package com.football.java;
+
+import com.football.model.Match;
+
+public interface MethodsInterface {
+	
+	public void getAllMatches();
+	public void getMatches(String team);
+	public void addMatch(Match match);
+}
