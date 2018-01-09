@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.football.model.Match"/>
-<fullyQualifiedTypeName name="org.mule.api.lifecycle.Callable"/>
 <fullyQualifiedTypeName name="com.football.database.Database"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
 <fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="java.security.KeyPairGenerator"/>
+<fullyQualifiedTypeName name="com.jcraft.jsch.KeyPair"/>
+<fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+<fullyQualifiedTypeName name="java.security.KeyPair"/>
+<fullyQualifiedTypeName name="java.security.PublicKey"/>
+<fullyQualifiedTypeName name="java.security.PrivateKey"/>
+<fullyQualifiedTypeName name="org.mule.api.lifecycle.Callable"/>
+<fullyQualifiedTypeName name="javax.crypto.Cipher"/>
+<fullyQualifiedTypeName name="java.util.Base64"/>
+<fullyQualifiedTypeName name="java.security.spec.KeySpec"/>
+<fullyQualifiedTypeName name="javax.crypto.spec.PBEKeySpec"/>
+<fullyQualifiedTypeName name="javax.crypto.SecretKeyFactory"/>
 </qualifiedTypeNameHistroy>

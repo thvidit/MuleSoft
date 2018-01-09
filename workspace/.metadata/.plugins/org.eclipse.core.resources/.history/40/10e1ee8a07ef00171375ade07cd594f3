@@ -1,6 +1,0 @@
-#** GENERATED CONTENT ** Mule Application Deployment Descriptor
-#Mon Jan 01 20:21:15 IST 2018
-redeployment.enabled=true
-encoding=UTF-8
-domain=default
-config.resources=football-soap-consume-ws.xml

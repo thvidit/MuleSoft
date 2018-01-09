@@ -1,9 +1,0 @@
-package com.orchard.ws.logic;
-
-public class Logic {
-	
-	public void checkId(int leadId){
-		
-	}
-
-}
