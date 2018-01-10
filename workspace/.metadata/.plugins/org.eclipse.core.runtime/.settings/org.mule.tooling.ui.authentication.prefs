@@ -1,5 +1,5 @@
-authenticated.users=[{"token"\:"5d3e13ff-9d53-4298-8de5-e9c527ad25a5","userId"\:"thvidit","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
-current.token=5d3e13ff-9d53-4298-8de5-e9c527ad25a5
+authenticated.users=[{"token"\:"2c4ec614-2acd-4076-9bf0-287ca1f92d9b","userId"\:"thvidit","refreshToken"\:"","baseUrl"\:"https\://anypoint.mulesoft.com/"}]
+current.token=2c4ec614-2acd-4076-9bf0-287ca1f92d9b
 current.user=thvidit
 eclipse.preferences.version=1
-org.mule.tooling.amc.apps={"userProjectMap"\:{"thvidit"\:{"orchard-apikit-ws"\:"{\\"applicationName\\"\:\\"orchard-apikit-ws\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{}}"}}}
+org.mule.tooling.amc.apps={"userProjectMap"\:{"thvidit"\:{"orchard-apikit-ws"\:"{\\"applicationName\\"\:\\"orchard-apikit-ws\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{}}","orchard-firebase"\:"{\\"applicationName\\"\:\\"orchard-firebase\\",\\"muleRuntime\\"\:\\"3.8.5\\",\\"properties\\"\:{}}"}}}

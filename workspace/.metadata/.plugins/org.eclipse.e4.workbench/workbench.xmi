@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_UHMpEPLgEeepyvObYokcFw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_UHMpEfLgEeepyvObYokcFw" bindingContexts="_UHPs2vLgEeepyvObYokcFw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;loginvalidation.xml&quot; tooltip=&quot;LoginValidation/src/main/app/loginvalidation.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/app/loginvalidation.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EncryptData.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;football-soap-ws-consume.xml&quot; tooltip=&quot;football-soap-ws-consume/src/main/app/football-soap-ws-consume.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/football-soap-ws-consume/src/main/app/football-soap-ws-consume.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DecryptData.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/DecryptData.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/DecryptData.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GenerateKeyPair.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/GenerateKeyPair.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/GenerateKeyPair.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Logic.java&quot; tooltip=&quot;orchard-apikit-ws/src/main/java/com/orchard/ws/logic/Logic.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-apikit-ws/src/main/java/com/orchard/ws/logic/Logic.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;american_flights_api.xml&quot; tooltip=&quot;american_flights_api/src/main/app/american_flights_api.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/american_flights_api/src/main/app/american_flights_api.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;javamessagingservice.xml&quot; tooltip=&quot;javamessagingservice/src/main/app/javamessagingservice.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/javamessagingservice/src/main/app/javamessagingservice.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;log4j2.xml&quot; tooltip=&quot;javamessagingservice/src/main/resources/log4j2.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/javamessagingservice/src/main/resources/log4j2.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;implementation.xml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/implementation.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/implementation.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;experience-api.xml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/experience-api.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/experience-api.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;global.xml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/global.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/global.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;mule-app.properties&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/mule-app.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/mule-app.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;mule-deploy.properties&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/mule-deploy.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/mule-deploy.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.raml.editor&quot; name=&quot;cartItem-types.raml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/api/types/cartItem-types.raml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/api/types/cartItem-types.raml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-firebase.xml&quot; tooltip=&quot;orchard-firebase/src/main/app/orchard-firebase.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-firebase/src/main/app/orchard-firebase.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-implementation.xml&quot; tooltip=&quot;orchard-apikit-ws/src/main/app/orchard-implementation.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-apikit-ws/src/main/app/orchard-implementation.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-interface.xml&quot; tooltip=&quot;orchard-apikit-ws/src/main/app/orchard-interface.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-apikit-ws/src/main/app/orchard-interface.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;american_flights_api.xml&quot; tooltip=&quot;american_flights_api/src/main/app/american_flights_api.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/american_flights_api/src/main/app/american_flights_api.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;loginvalidation.xml&quot; tooltip=&quot;LoginValidation/src/main/app/loginvalidation.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/app/loginvalidation.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-ws.xml&quot; tooltip=&quot;orchard-ws/src/main/app/orchard-ws.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-ws/src/main/app/orchard-ws.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EncryptData.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;football-soap-ws-consume.xml&quot; tooltip=&quot;football-soap-ws-consume/src/main/app/football-soap-ws-consume.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/football-soap-ws-consume/src/main/app/football-soap-ws-consume.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DecryptData.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/DecryptData.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/DecryptData.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;GenerateKeyPair.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/GenerateKeyPair.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/GenerateKeyPair.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Logic.java&quot; tooltip=&quot;orchard-apikit-ws/src/main/java/com/orchard/ws/logic/Logic.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/orchard-apikit-ws/src/main/java/com/orchard/ws/logic/Logic.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;javamessagingservice.xml&quot; tooltip=&quot;javamessagingservice/src/main/app/javamessagingservice.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/javamessagingservice/src/main/app/javamessagingservice.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;log4j2.xml&quot; tooltip=&quot;javamessagingservice/src/main/resources/log4j2.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/javamessagingservice/src/main/resources/log4j2.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;implementation.xml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/implementation.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/implementation.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;experience-api.xml&quot; tooltip=&quot;template-retail-omnichannel-experience-api-1.3.0/src/main/app/experience-api.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/template-retail-omnichannel-experience-api-1.3.0/src/main/app/experience-api.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_UHMpEfLgEeepyvObYokcFw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_UHMpEvLgEeepyvObYokcFw" x="0" y="0" width="1612" height="876">
@@ -67,6 +67,7 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_UHMpFfLgEeepyvObYokcFw" selectedElement="_UHMpHvLgEeepyvObYokcFw" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_UHMpFvLgEeepyvObYokcFw" containerData="1625" selectedElement="_UHMpF_LgEeepyvObYokcFw">
               <children xsi:type="basic:PartStack" xmi:id="_UHMpF_LgEeepyvObYokcFw" elementId="left" containerData="9000" selectedElement="_UHMpGPLgEeepyvObYokcFw">
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_UHMpGPLgEeepyvObYokcFw" elementId="org.eclipse.jdt.ui.PackageExplorer" ref="_UHN4CfLgEeepyvObYokcFw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_UHMpGfLgEeepyvObYokcFw" elementId="org.eclipse.ui.navigator.ProjectExplorer" toBeRendered="false" ref="_UHOeTPLgEeepyvObYokcFw"/>
               </children>
@@ -77,14 +78,14 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_UHMpHvLgEeepyvObYokcFw" containerData="8375" selectedElement="_UHMpH_LgEeepyvObYokcFw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_UHMpH_LgEeepyvObYokcFw" containerData="7563" selectedElement="_UHMpIPLgEeepyvObYokcFw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_UHMpH_LgEeepyvObYokcFw" containerData="5520" selectedElement="_UHMpIPLgEeepyvObYokcFw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_UHMpIPLgEeepyvObYokcFw" elementId="org.eclipse.ui.editorss" containerData="8031" ref="_UHMqa_LgEeepyvObYokcFw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_UHMpIfLgEeepyvObYokcFw" elementId="right" containerData="1969" selectedElement="_UHMpIvLgEeepyvObYokcFw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_UHMpIvLgEeepyvObYokcFw" elementId="org.mule.tooling.ui.palette.PaletteView" ref="_UHOehPLgEeepyvObYokcFw"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_UHMpI_LgEeepyvObYokcFw" elementId="org.mule.tooling.apikit.common.views.ApiSyncView" ref="_UHOeh_LgEeepyvObYokcFw"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_UHMpJPLgEeepyvObYokcFw" elementId="PartStack@7982fa32" containerData="2437" selectedElement="_UHMpKfLgEeepyvObYokcFw">
+              <children xsi:type="basic:PartStack" xmi:id="_UHMpJPLgEeepyvObYokcFw" elementId="PartStack@7982fa32" containerData="4480" selectedElement="_UHMpJvLgEeepyvObYokcFw">
                 <tags>APIkit Views</tags>
                 <tags>Team</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_UHMpJfLgEeepyvObYokcFw" elementId="org.eclipse.ui.views.ProblemView" ref="_UHOeXPLgEeepyvObYokcFw"/>
@@ -217,11 +218,9 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_UHMqa_LgEeepyvObYokcFw" elementId="org.eclipse.ui.editorss" selectedElement="_UHMqbPLgEeepyvObYokcFw">
-      <children xsi:type="basic:PartStack" xmi:id="_UHMqbPLgEeepyvObYokcFw" elementId="PartStack@462e1e64" selectedElement="_CkAmkPSKEee4LegHTzhldw">
+      <children xsi:type="basic:PartStack" xmi:id="_UHMqbPLgEeepyvObYokcFw" elementId="PartStack@462e1e64" selectedElement="_DW-8wPVoEeebLpF-Q8DR1Q">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
-        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_UHMqbfLgEeepyvObYokcFw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="orchard-ws" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-ws.xml&quot; partName=&quot;orchard-ws&quot; title=&quot;orchard-ws&quot; tooltip=&quot;orchard-ws/src/main/app/orchard-ws.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/orchard-ws/src/main/app/orchard-ws.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -311,14 +310,6 @@
             <tags>popup:org.eclipse.core.runtime.xml.source.source.RulerContext</tags>
             <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
           </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_CkAmkPSKEee4LegHTzhldw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="loginvalidation" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;loginvalidation.xml&quot; partName=&quot;loginvalidation&quot; title=&quot;loginvalidation&quot; tooltip=&quot;LoginValidation/src/main/app/loginvalidation.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LoginValidation/src/main/app/loginvalidation.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
-          <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_UHMqffLgEeepyvObYokcFw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mule-app.properties" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/file_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;mule-app.properties&quot; partName=&quot;mule-app.properties&quot; title=&quot;mule-app.properties&quot; tooltip=&quot;orchard-ws/src/main/app/mule-app.properties&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/orchard-ws/src/main/app/mule-app.properties&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -2242,10 +2233,36 @@
           <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_RbqEYPSXEee4LegHTzhldw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="EncryptData.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EncryptData.java&quot; partName=&quot;EncryptData.java&quot; title=&quot;EncryptData.java&quot; tooltip=&quot;LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LoginValidation/src/main/java/com/mule/encrypt/EncryptData.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;636&quot; selectionTopPixel=&quot;204&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_Y92FAPT7Eeeotsa2VeojZA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="loginvalidation" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;loginvalidation.xml&quot; partName=&quot;loginvalidation&quot; title=&quot;loginvalidation&quot; tooltip=&quot;LoginValidation/src/main/app/loginvalidation.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LoginValidation/src/main/app/loginvalidation.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_rARIAPVQEeecKP3PxhE7TQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="american_flights_api" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;american_flights_api.xml&quot; partName=&quot;american_flights_api&quot; title=&quot;american_flights_api&quot; tooltip=&quot;american_flights_api/src/main/app/american_flights_api.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/american_flights_api/src/main/app/american_flights_api.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
+          <tags>removeOnHide</tags>
+          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_pIlLoPVmEeebLpF-Q8DR1Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="orchard-implementation" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-implementation.xml&quot; partName=&quot;orchard-implementation&quot; title=&quot;orchard-implementation&quot; tooltip=&quot;orchard-apikit-ws/src/main/app/orchard-implementation.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/orchard-apikit-ws/src/main/app/orchard-implementation.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_suQR0PVmEeebLpF-Q8DR1Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="orchard-interface" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-interface.xml&quot; partName=&quot;orchard-interface&quot; title=&quot;orchard-interface&quot; tooltip=&quot;orchard-apikit-ws/src/main/app/orchard-interface.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/orchard-apikit-ws/src/main/app/orchard-interface.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_DW-8wPVoEeebLpF-Q8DR1Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="orchard-firebase" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;orchard-firebase.xml&quot; partName=&quot;orchard-firebase&quot; title=&quot;orchard-firebase&quot; tooltip=&quot;orchard-firebase/src/main/app/orchard-firebase.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/orchard-firebase/src/main/app/orchard-firebase.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.mule.tooling.messageflow.messageFlowEditor</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -2255,6 +2272,7 @@
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
       <tags>activeOnClose</tags>
+      <tags>active</tags>
       <menus xmi:id="_UHN4CvLgEeepyvObYokcFw" elementId="org.eclipse.jdt.ui.PackageExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -2277,7 +2295,7 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_UHOeTfLgEeepyvObYokcFw" elementId="org.mule.tooling.connectivitytesting.views.ConnectivityTestingView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Connections Explorer (LoginValidation)" iconURI="platform:/plugin/org.mule.tooling.connectivitytesting/icons/connectivity.png" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_UHOeTfLgEeepyvObYokcFw" elementId="org.mule.tooling.connectivitytesting.views.ConnectivityTestingView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Connections Explorer (orchard-firebase)" iconURI="platform:/plugin/org.mule.tooling.connectivitytesting/icons/connectivity.png" tooltip="" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:MuleSoft</tags>
@@ -2317,10 +2335,10 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_UHOeWPLgEeepyvObYokcFw" elementId="org.mule.tooling.properties.views.MulePropertiesView" visible="false"/>
+      <toolbar xmi:id="_UHOeWPLgEeepyvObYokcFw" elementId="org.mule.tooling.properties.views.MulePropertiesView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_UHOeXPLgEeepyvObYokcFw" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (59 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;445&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (58 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;445&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_UHOeXfLgEeepyvObYokcFw" elementId="org.eclipse.ui.views.ProblemView">
@@ -2352,6 +2370,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>highlighted</tags>
       <menus xmi:id="_UHOebvLgEeepyvObYokcFw" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -2372,7 +2391,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.debug.ui.ProcessConsoleType.#ContextMenu</tags>
       </menus>
-      <toolbar xmi:id="_UHOec_LgEeepyvObYokcFw" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_UHOec_LgEeepyvObYokcFw" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_UHOegvLgEeepyvObYokcFw" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" closeable="true">
       <tags>View</tags>
@@ -2386,6 +2405,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:MuleSoft</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_UHOehfLgEeepyvObYokcFw" elementId="org.mule.tooling.ui.palette.PaletteView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -2506,13 +2526,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOeuPLgEeepyvObYokcFw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ynoe4PSIEee4LegHTzhldw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UHQ6y_LgEeepyvObYokcFw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_jMNT0PVmEeebLpF-Q8DR1Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_UHQ6y_LgEeepyvObYokcFw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOex_LgEeepyvObYokcFw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_UHOeyPLgEeepyvObYokcFw" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_UHOe8_LgEeepyvObYokcFw" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet">
+      <children xsi:type="menu:ToolBar" xmi:id="_UHOe8_LgEeepyvObYokcFw" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOe_PLgEeepyvObYokcFw" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
@@ -2521,7 +2541,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_UHOfCfLgEeepyvObYokcFw" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_UHOfEvLgEeepyvObYokcFw" elementId="org.eclipse.search.searchActionSet">
+      <children xsi:type="menu:ToolBar" xmi:id="_UHOfEvLgEeepyvObYokcFw" elementId="org.eclipse.search.searchActionSet" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOfGfLgEeepyvObYokcFw" elementId="group.nav" toBeRendered="false">
@@ -2530,7 +2550,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOfG_LgEeepyvObYokcFw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ynvMkPSIEee4LegHTzhldw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_UHQVufLgEeepyvObYokcFw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_jMSzYPVmEeebLpF-Q8DR1Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_UHQVufLgEeepyvObYokcFw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_UHOfM_LgEeepyvObYokcFw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

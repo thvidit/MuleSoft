@@ -24,7 +24,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="get:/flights:apiConfig">
         <db:select config-ref="MySQL_Configuration" doc:name="American table">
             <db:parameterized-query><![CDATA[SELECT *
-FROM AMERICAN where destination = #[message.inboundProperties.'http.query.params'.code]]]></db:parameterized-query>
+FROM AMERICAN
+WHERE destination = #[message.inboundProperties.'http.query.params'.code]]]></db:parameterized-query>
         </db:select>
         <set-variable variableName="planeIdList" value="#[new java.util.ArrayList()]" doc:name="PlaneId List"/>
         <set-variable variableName="payloadList" value="#[new java.util.ArrayList()]" doc:name="Plane Attributes"/>

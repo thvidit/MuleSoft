@@ -15,7 +15,7 @@
 # License Agreement <a name="licenseagreement"/>
 Note that using this template is subject to the conditions of this [License Agreement](AnypointTemplateLicense.pdf).
 Please review the terms of the license before downloading and using this template. In short, you are allowed to use the template for free with Mule ESB Enterprise Edition, CloudHub, or as a trial in Anypoint Studio.
-
+//2348694177-FDv1qqdZ0DWYTfKLTCwMOc4nTQSlb3M2nxZ35Ut
 # Use Case <a name="usecase"/>
 
 As a Customer I want a service to request information about me (personal information, my billing and shipping address, my payment methods), information about provided products, shopping carts and orders. 

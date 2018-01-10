@@ -22,9 +22,7 @@ CAMPUSMINDS]]></db:parameterized-query>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
 ---
-{
-	MID: sum payload.MID 
-}]]></dw:set-payload>
+payload]]></dw:set-payload>
         </dw:transform-message>
         <logger message="After Dataweave: #[payload]" level="INFO" doc:name="Logger"/>
     </flow>
