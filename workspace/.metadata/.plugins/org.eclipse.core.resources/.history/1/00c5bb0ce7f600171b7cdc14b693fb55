@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="/cafe" doc:name="HTTP Listener Configuration"/>
+    <flow name="GetMeals">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/meals" doc:name="HTTP"/>
+        <set-variable variableName="meal" value="#[message.inboundProperties.'http.query.params'.meal]" doc:name="Set Meal"/>
+        <choice doc:name="Choice">
+            <when expression="">
+                <flow-ref name="BreakfastFlow" doc:name="Flow Reference"/>
+            </when>
+            <when expression="">
+                <flow-ref name="LunchFlow" doc:name="LunchFlow"/>
+            </when>
+            <when expression="">
+                <flow-ref name="" doc:name="Flow Reference"/>
+            </when>
+            <when expression="">
+                <flow-ref name="" doc:name="Flow Reference"/>
+            </when>
+            <otherwise>
+                <flow-ref name="" doc:name="Flow Reference"/>
+            </otherwise>
+        </choice>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+}]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+    <sub-flow name="BreakfastFlow">
+        <db:no-operation-selected config-ref="" doc:name="Database"/>
+    </sub-flow>
+    <sub-flow name="LunchFlow">
+        <db:no-operation-selected config-ref="" doc:name="Database"/>
+    </sub-flow>
+    <sub-flow name="SnacksFlow">
+        <db:no-operation-selected config-ref="" doc:name="Database"/>
+    </sub-flow>
+    <sub-flow name="DinnerFlow"/>
+    <sub-flow name="AllmealsFlow">
+        <scatter-gather doc:name="Scatter-Gather">
+            <flow-ref name="" doc:name="Flow Reference"/>
+            <flow-ref name="" doc:name="Flow Reference"/>
+            <flow-ref name="" doc:name="Flow Reference"/>
+            <flow-ref name="" doc:name="Flow Reference"/>
+        </scatter-gather>
+    </sub-flow>
+</mule>
