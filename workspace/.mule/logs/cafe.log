@@ -17056,3 +17056,148 @@ Message properties:
 *   Batch module default engine                                      *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2018-01-19 10:46:50,087 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'cafe'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2018-01-19 10:46:51,095 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2018-01-19 10:46:51,640 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2018-01-19 10:46:54,404 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2018-01-19 10:46:54,405 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2018-01-19 10:46:55,082 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@67fc2aad: startup date [Fri Jan 19 10:46:55 IST 2018]; root of context hierarchy
+2018-01-19 10:47:00,734 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-01-19 10:47:02,786 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-19 10:47:02,786 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-19 10:47:02,786 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-19 10:47:02,786 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2018-01-19 10:47:05,391 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2018-01-19 10:47:07,035 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\M1043142\AnypointStudio\workspace\.mule\.\.mule\cafe\queue-tx-log\tx1.log and C:\Users\M1043142\AnypointStudio\workspace\.mule\.\.mule\cafe\queue-tx-log\tx2.log
+2018-01-19 10:47:07,102 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs C:\Users\M1043142\AnypointStudio\workspace\.mule\.\.mule\cafe\queue-xa-tx-log\tx1.log and C:\Users\M1043142\AnypointStudio\workspace\.mule\.\.mule\cafe\queue-xa-tx-log\tx2.log
+2018-01-19 10:47:07,328 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2018-01-19 10:47:07,335 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: LoginFlow
+2018-01-19 10:47:07,336 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@13390a96
+2018-01-19 10:47:07,381 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: LoginFlow.stage1
+2018-01-19 10:47:07,407 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.190684958
+2018-01-19 10:47:07,421 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: SignupFlow
+2018-01-19 10:47:07,421 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@23ec63af
+2018-01-19 10:47:07,436 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: SignupFlow.stage1
+2018-01-19 10:47:07,437 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.1722868231
+2018-01-19 10:47:08,497 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetMeals
+2018-01-19 10:47:08,499 [main] INFO  org.mule.exception.CatchMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.CatchMessagingExceptionStrategy@be1c08a
+2018-01-19 10:47:08,524 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetMeals.stage1
+2018-01-19 10:47:08,568 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: PlaceOrder
+2018-01-19 10:47:08,568 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@74eab077
+2018-01-19 10:47:08,584 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: PlaceOrder.stage1
+2018-01-19 10:47:08,598 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: UpdateUserOrders
+2018-01-19 10:47:08,599 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2759749
+2018-01-19 10:47:08,613 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: UpdateUserOrders.stage1
+2018-01-19 10:47:08,615 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: GetUserOrders
+2018-01-19 10:47:08,615 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45cb5307
+2018-01-19 10:47:08,632 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: GetUserOrders.stage1
+2018-01-19 10:47:08,635 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: CancelUserOrder
+2018-01-19 10:47:08,635 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@505a8582
+2018-01-19 10:47:08,715 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2018-01-19 10:47:08,735 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: LoginFlow
+2018-01-19 10:47:08,736 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: LoginFlow.stage1
+2018-01-19 10:47:08,737 [main] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.190684958
+2018-01-19 10:47:08,738 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: SignupFlow
+2018-01-19 10:47:08,738 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: SignupFlow.stage1
+2018-01-19 10:47:08,738 [main] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.1722868231
+2018-01-19 10:47:08,738 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetMeals
+2018-01-19 10:47:08,738 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetMeals.stage1
+2018-01-19 10:47:08,739 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: PlaceOrder
+2018-01-19 10:47:08,739 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: PlaceOrder.stage1
+2018-01-19 10:47:08,740 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: UpdateUserOrders
+2018-01-19 10:47:08,740 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: UpdateUserOrders.stage1
+2018-01-19 10:47:08,741 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: GetUserOrders
+2018-01-19 10:47:08,741 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: GetUserOrders.stage1
+2018-01-19 10:47:08,744 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2018-01-19 10:47:09,847 [main] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@67fc2aad: startup date [Fri Jan 19 10:46:55 IST 2018]; root of context hierarchy
+2018-01-19 10:47:10,054 [main] ERROR org.mule.module.launcher.application.DefaultMuleApplication - null
+org.mule.api.MuleRuntimeException: Already exists a listener matching that path and methods. Listener matching ListenerRequestMatcher{path='/cafe/', methodRequestMatcher=MethodRequestMatcher{methods=*}} new listener ListenerRequestMatcher{path='/cafe/', methodRequestMatcher=MethodRequestMatcher{methods=*}}
+	at org.mule.module.http.internal.listener.HttpListenerRegistry$ServerAddressRequestHandlerRegistry.validateCollision(HttpListenerRegistry.java:187) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.module.http.internal.listener.HttpListenerRegistry$ServerAddressRequestHandlerRegistry.addRequestHandler(HttpListenerRegistry.java:98) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.module.http.internal.listener.HttpListenerRegistry.addRequestHandler(HttpListenerRegistry.java:52) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyServer.addRequestHandler(GrizzlyServer.java:80) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.module.http.internal.listener.DefaultHttpListenerConfig.addRequestHandler(DefaultHttpListenerConfig.java:239) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.module.http.internal.listener.DefaultHttpListener.initialise(DefaultHttpListener.java:224) ~[mule-module-http-3.8.5.jar:3.8.5]
+	at org.mule.construct.AbstractFlowConstruct.initialiseIfInitialisable(AbstractFlowConstruct.java:317) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.AbstractPipeline.doInitialise(AbstractPipeline.java:241) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.Flow.doInitialise(Flow.java:75) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:104) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.AbstractFlowConstruct$1.onTransition(AbstractFlowConstruct.java:98) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.AbstractLifecycleManager.invokePhase(AbstractLifecycleManager.java:138) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.FlowConstructLifecycleManager.fireInitialisePhase(FlowConstructLifecycleManager.java:78) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.construct.AbstractFlowConstruct.initialise(AbstractFlowConstruct.java:97) ~[mule-core-3.8.5.jar:3.8.5]
+	at sun.reflect.GeneratedMethodAccessor29.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.lifecycle.phases.DefaultLifecyclePhase.applyLifecycle(DefaultLifecyclePhase.java:237) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.phases.MuleContextInitialisePhase.applyLifecycle(MuleContextInitialisePhase.java:71) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.RegistryLifecycleCallback.doApplyLifecycle(RegistryLifecycleCallback.java:99) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.RegistryLifecycleCallback.onTransition(RegistryLifecycleCallback.java:71) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.RegistryLifecycleManager.invokePhase(RegistryLifecycleManager.java:155) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.lifecycle.RegistryLifecycleManager.fireLifecycle(RegistryLifecycleManager.java:126) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.registry.AbstractRegistry.fireLifecycle(AbstractRegistry.java:146) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.registry.AbstractRegistry.initialise(AbstractRegistry.java:116) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.createSpringRegistry(SpringXmlConfigurationBuilder.java:177) ~[mule-module-spring-config-3.8.5.jar:3.8.5]
+	at org.mule.config.spring.SpringXmlConfigurationBuilder.doConfigure(SpringXmlConfigurationBuilder.java:100) ~[mule-module-spring-config-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AutoConfigurationBuilder.autoConfigure(AutoConfigurationBuilder.java:102) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AutoConfigurationBuilder.doConfigure(AutoConfigurationBuilder.java:54) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AbstractConfigurationBuilder.configure(AbstractConfigurationBuilder.java:43) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.config.builders.AbstractResourceConfigurationBuilder.configure(AbstractResourceConfigurationBuilder.java:69) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.context.DefaultMuleContextFactory$1.configure(DefaultMuleContextFactory.java:89) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.context.DefaultMuleContextFactory.doCreateMuleContext(DefaultMuleContextFactory.java:222) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.context.DefaultMuleContextFactory.createMuleContext(DefaultMuleContextFactory.java:81) ~[mule-core-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.init(DefaultMuleApplication.java:203) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$2.execute(ArtifactWrapper.java:63) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.init(ArtifactWrapper.java:58) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:25) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:317) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:172) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:261) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:76) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.deployPackedApps(DeploymentDirectoryWatcher.java:279) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:151) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleDeploymentService.start(MuleDeploymentService.java:134) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleContainer.start(MuleContainer.java:172) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.tooling.server.application.ApplicationDeployer.main(ApplicationDeployer.java:33) ~[tooling-support-3.8.5.jar:?]
+2018-01-19 10:47:10,057 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - App 'cafe' never started, nothing to dispose of
+2018-01-19 10:47:10,176 [main] WARN  org.mule.module.launcher.artifact.DefaultResourceReleaser - Unable to shutdown MySql's AbandonedConnectionCleanupThread
+java.lang.ClassNotFoundException: com.mysql.jdbc.AbandonedConnectionCleanupThread
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.findClass(FineGrainedControlClassLoader.java:181) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleApplicationClassLoader.findClass(MuleApplicationClassLoader.java:138) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.FineGrainedControlClassLoader.loadClass(FineGrainedControlClassLoader.java:117) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.shutdownMySqlAbandonedConnectionCleanupThread(DefaultResourceReleaser.java:197) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.doDeregisterDriver(DefaultResourceReleaser.java:133) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.deregisterJdbcDrivers(DefaultResourceReleaser.java:84) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.DefaultResourceReleaser.release(DefaultResourceReleaser.java:38) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.AbstractArtifactClassLoader.dispose(AbstractArtifactClassLoader.java:67) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.CompositeApplicationClassLoader.dispose(CompositeApplicationClassLoader.java:285) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.application.DefaultMuleApplication.dispose(DefaultMuleApplication.java:310) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper$1.execute(ArtifactWrapper.java:40) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.executeWithinArtifactClassLoader(ArtifactWrapper.java:136) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.artifact.ArtifactWrapper.dispose(ArtifactWrapper.java:35) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArtifactDeployer.deploy(DefaultArtifactDeployer.java:30) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployArtifact(DefaultArchiveDeployer.java:317) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:172) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:261) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DefaultArchiveDeployer.deployPackagedArtifact(DefaultArchiveDeployer.java:76) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.deployPackedApps(DeploymentDirectoryWatcher.java:279) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.DeploymentDirectoryWatcher.start(DeploymentDirectoryWatcher.java:151) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleDeploymentService.start(MuleDeploymentService.java:134) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at org.mule.module.launcher.MuleContainer.start(MuleContainer.java:172) ~[mule-module-launcher-3.8.5.jar:3.8.5]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_102]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_102]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_102]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_102]
+	at org.mule.tooling.server.application.ApplicationDeployer.main(ApplicationDeployer.java:33) ~[tooling-support-3.8.5.jar:?]

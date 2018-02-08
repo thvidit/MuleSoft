@@ -16,9 +16,19 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
         <set-variable variableName="jsonData" value="#[message.payload]" mimeType="application/json" doc:name="Save json data"/>
         <logger level="INFO" doc:name="Logger"/>
         <db:insert config-ref="MySQL_Configuration" doc:name="Database">
-            <db:parameterized-query><![CDATA[INSERT INTO orders values (#[json:orderId],#[json:userId],#[json:orderDesc],#[json:created]);]]></db:parameterized-query>
+            <db:parameterized-query><![CDATA[INSERT INTO orders values (#[json:orderId],#[json:userId],#[json:orderDesc],#[json:created],"Placed");]]></db:parameterized-query>
         </db:insert>
         <flow-ref name="Add-Items-to-orders" doc:name="Add-Items-to-orders"/>
+    </flow>
+    <flow name="UpdateUserOrders">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <set-variable variableName="orderId" value="#[json:orderId]" doc:name="Set orderId"/>
+        <set-payload value="#[json:meals]" doc:name="Set Payload"/>
+        <foreach doc:name="For Each">
+            <db:update config-ref="MySQL_Configuration" doc:name="Database">
+                <db:parameterized-query><![CDATA[UPDATE orders set meal_id = #[json:mealId] where orderId = #[json:orderId];]]></db:parameterized-query>
+            </db:update>
+        </foreach>
     </flow>
     <flow name="GetUserOrders">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/orders" allowedMethods="GET" doc:name="HTTP"/>
@@ -28,6 +38,13 @@ FROM orders o INNER JOIN order_items oi ON o.order_id= oi.order_id
 WHERE user_id = #[message.inboundProperties.'http.query.params'.user];]]></db:parameterized-query>
         </db:select>
         <json:object-to-json-transformer doc:name="Object to JSON"/>
+    </flow>
+    <flow name="CancelUserOrder">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+            <db:parameterized-query><![CDATA[SELECT order_status from orders
+WHERE order_id = #[message.inboundProperties.'http.query.params'.orderid]]]></db:parameterized-query>
+        </db:select>
     </flow>
     <sub-flow name="Add-Items-to-orders">
         <set-payload value="#[flowVars.jsonData]" doc:name="Set Payload"/>
