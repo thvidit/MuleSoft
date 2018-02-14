@@ -6,3 +6,5 @@ Projects:
 3. Mulesoft week 5-6-7
 4. Orhcard web service
 5. Orhcard web service exchange
+7. Cafeteria Apis
+8. LoginSignupValidation
